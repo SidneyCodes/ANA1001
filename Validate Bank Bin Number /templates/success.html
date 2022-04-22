@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donut Order</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="{{ url_for('static', filename='fav/favicon.ico') }}">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">Buy a donut</a>
+    <a href="/" class="w3-right w3-button w3-white">Back to main</a>
+  </header>
+
+<br><br>
+    <center>
+        <img src="https://www.kidmando.com/images/Icons/success.png">
+        <br>
+    <h2>
+        Your name is {{ data["Name"] }}<br>
+        Credit Card number is {{ data["Credit"] }}<br>
+        Thank you for your order!<br>
+        {{ result }}
+    </h2>
+    </center>
+</div>
+
+ 
+</body>
+</html>
